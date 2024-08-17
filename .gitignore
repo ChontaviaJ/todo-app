@@ -1,0 +1,6 @@
+# Ignore the virtual environment directory
+todo-env/
+
+# Ignore macOS system files
+.DS_Store
+
