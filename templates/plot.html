@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Word Frequency Plot</title>
+</head>
+<body>
+    <h1>Task Word Frequency Plot</h1>
+    <img src="{{ plot_url }}" alt="Task Plot">
+
+    <h2>Word Counts</h2>
+    <ul>
+        {% for word, count in word_counts.items() %}
+            <li>{{ word }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+
+    <p><a href="/">Back to To-Do List</a></p>
+</body>
+</html>

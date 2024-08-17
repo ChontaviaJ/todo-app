@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Analysis</title>
+</head>
+<body>
+    <h1>Task Analysis</h1>
+    <p>Total number of tasks: {{ task_count }}</p>
+    <h2>Word Frequency</h2>
+    <ul>
+        {% for word, count in word_counts.items() %}
+            <li>{{ word }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/">Back to To-Do List</a></p>
+</body>
+</html>
