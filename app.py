@@ -140,3 +140,12 @@ def help():
 # Run the app
 if __name__ == '__main__':
     app.run(debug=False)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+# Ensure other routes are defined as needed
+
+if __name__ == '__main__':
+    app.run(debug=True)
